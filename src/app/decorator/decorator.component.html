@@ -1,0 +1,21 @@
+<div class="jumbotron">
+    <button class="btn btn-success" (click) = "toggleContent()">Display Details</button>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="content" *ngIf="content">
+                <h1 class="text-center">Decorators in Angular</h1>
+                <p>
+                    Decorators are a design pattern that is used to separate modification or decoration of a 
+                    class without modifying the original source code. In AngularJS, decorators are functions 
+                    that allow a service, directive or filter to be modified prior to its usage.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="log-data">
+                <p *ngFor="let log of logs; let i = index" [ngStyle]="{backgroundColor: i>=4 ? '#37a3a1' : 'transperent' }" [ngClass]="{ countlimit: i>=4}">
+                    {{ log | date: 'medium' }}
+            </div>
+        </div>
+    </div>
+</div>

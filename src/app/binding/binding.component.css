@@ -1,0 +1,17 @@
+input {
+    width: 35%;
+    margin-left: 20px;
+}
+
+label {
+    margin-left: 20px;
+}
+
+p {
+    margin: 20px;
+}
+
+.jumbotron {
+    border-radius: 5px;
+    margin-left: 20px;
+}

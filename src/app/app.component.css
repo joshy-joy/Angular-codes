@@ -1,0 +1,12 @@
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #9fa4a6;
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.alert {
+    margin-left: 20px;
+}
